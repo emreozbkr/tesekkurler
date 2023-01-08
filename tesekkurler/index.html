@@ -1,55 +1,53 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-	<head>
-		<meta charset="utf-8">
-		<title>🧡</title>
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="icon" href="fireworks.png">
-	</head>
-	<body>
+<html lang="en">
 
-		<div class="text-container">
-			<h1>STAY IN FOLLOW<br><span>🧑🏻‍💻🧑🏻‍💻</span></h1>
-			<div class="animated-text">
-				<h2>Thank you!</h2>
-				<h2>OBRIGADO!</h2>
-				<h2>Teşekkürler!</h2>
-				<h2>Terima kasih!</h2>
-				<h2>Teşekkürler!</h2>
-				<h2>Gracias!</h2>
-				<h2>Teşekkürler!</h2>
-			</div>
-		</div>
-		<div class="animation-container">
-			<div class="burst">
-				<div class="line"></div>
-				<div class="line"></div>
-				<div class="line"></div>
-				<div class="line"></div>
-				<div class="line"></div>
-				<div class="line"></div>
-				<div class="line"></div>
-				<div class="line"></div>
-			</div>
-		</div>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ArtGallery</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="./images/sculpture.png">
+  <meta name="viewport" content="width=device.width ">
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
-		<script type="text/javascript">
-		function createBurst(){
-			let animContainer = document.querySelector('.animation-container');
-			let burst = document.querySelector('.burst');
+<body>
 
-			burst.style.top = Math.random() * 550 + 'px';
-			burst.style.left = Math.random() * 750 + 'px';
+  <div id="hero">
+    <video autoplay muted loop src="./video/dance.mp4" class="ph1"></video>
+    <div class="content">
+      <div class="container">
+        <h1 class="head">"Drake, 21 Savage - Rich Flex (Audio)"</h1>
+        <p> @c0dewithemre</p><br>
+        <div class="auidomp3">
+          <img src="./images/play.png" class="playyy" id="icon">
+        </div>
 
-			let burstClone = burst.cloneNode(true);
-			animContainer.appendChild(burstClone);
+      </div>
+    </div>
+  </div>
+  <audio  loop preload="metadata" id="mySong" >
+    <source src="./audio/music.mp3" type="audio/mp3">
+  </audio>
+<script>
+    var mySong = document.getElementById("mySong");
+    var icon = document.getElementById("icon");
 
-			setTimeout(() => {
-				burstClone.remove();
-			}, 20000);
-		}
-		setInterval(createBurst, 2000);
-		</script>
+    icon.onclick = function(){
+      if(mySong.paused){
+        mySong.play();
+        icon.src = "./images/pause.png"
+      }else{
+        mySong.pause();
+        icon.src = "./images/play.png"
 
-	</body>
+      }
+    }
+  </script>
+
+
+</body>
+
 </html>
