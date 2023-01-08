@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,200&display=swap');
+  body {margin:0;padding:0;}
+
+  #hero {
+    position:relative;
+    text-align: center;
+  }
+  #icon{
+    cursor: pointer;
+    text-align: center;
+
+  }
+  .auidomp3 p{
+    font-size: 22px;
+    color: black;
+
+  }
+.playyy{
+  width: 100px;
+  height: 100px;
+  float: right;
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  margin-right: 37%;
+  margin-bottom: -200px;
+
+}
+
+  #hero .ph1 {
+    height:100vh;
+    width:100%;
+    background-position:absolute;
+    z-index:10;
+    object-fit:cover;
+  }
+  #hero .content {
+    background:rgba(0,0,0,0.5);
+    height:100%;
+    width:100%;
+    z-index:20;
+    position:absolute;
+    top:0;
+    left:0;
+    text-align:center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #hero .content p{
+    font-size: 20px;
+  }
+  #hero .content h1 {
+    color:#FFF;
+    font-size: 36px;
+    font-family: 'Montserrat', sans-serif;
+}
+  #hero .content {
+    color:#FFF;
+font-family: 'Montserrat', sans-serif;    font-size: 28px;
+  }
