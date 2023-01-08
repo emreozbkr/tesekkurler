@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ArtGallery</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" href="./images/sculpture.png">
+  <meta name="viewport" content="width=device.width ">
+  <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+  <div id="hero">
+    <video autoplay muted loop src="./video/dance.mp4" class="ph1"></video>
+    <div class="content">
+      <div class="container">
+        <h1 class="head">"Drake, 21 Savage - Rich Flex (Audio)"</h1>
+        <p> @c0dewithemre</p><br>
+        <div class="auidomp3">
+          <img src="./images/play.png" class="playyy" id="icon">
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <audio  loop preload="metadata" id="mySong" >
+    <source src="./audio/music.mp3" type="audio/mp3">
+  </audio>
+<script>
+    var mySong = document.getElementById("mySong");
+    var icon = document.getElementById("icon");
+
+    icon.onclick = function(){
+      if(mySong.paused){
+        mySong.play();
+        icon.src = "./images/pause.png"
+      }else{
+        mySong.pause();
+        icon.src = "./images/play.png"
+
+      }
+    }
+  </script>
+
+
+</body>
+
+</html>
