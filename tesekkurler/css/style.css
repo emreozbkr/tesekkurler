@@ -21,16 +21,16 @@
     color: black;
 
   }
-.playyy{
-  width: 100px;
-  height: 100px;
-  float: right;
-  display: flex;
-  align-items: center;
-  margin-top: 50px;
-  margin-right: 45%;
-  margin-bottom: -200px;
-}
+  .playyy{
+    width: 100px;
+    height: 100px;
+    float: right;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    margin-right: 40%;
+    margin-bottom: -200px;
+  }
 
   #hero .ph1 {
     height:100vh;
